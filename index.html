@@ -3,7 +3,14 @@
 <title>mastermeikä</title>
   
 <script>
-  var otsikkoElementti = document.getElementByName("otsikko");
+  var otsikkoElementti = document.getElementByid("otsikko");
+  
+  function poistaOtsikko() {
+    otsikkoElementti.remove()
+  }
+  
+  otsikkoElementti.onclick = poistaOtsikko;
+    
 </script>
   
 <body style="background-color:#567899;">
